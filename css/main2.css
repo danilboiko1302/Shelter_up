@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-width: 360px;
+    height: 100%;
+}
+
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header
+{
+    width: 100%;
+    background: url('../assets/images/3.png');
+    height: 400px;
+}
+
+.header__logo
+{
+    text-transform: uppercase;
+    padding-top: 323px;
+    font-size: 40pt;
+    margin-left: 5%;
+    color: #ffffff;
+}
+
+.content {
+    flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    padding: 20px;
+}
+.footer {
+    flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    padding: 20px;
+    text-align: center;
+    color: gray;
+}
+
+
+.main-contain {
+    max-width: 100%;
+    min-width: 375px;
+    min-height: 500px;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    background-color: #fff;
+}
+
+.main-contain img {
+    padding: 10px;
+    margin-left: 35px;
+}
+
+btn btn-secondary {
+    max-width: 100%;
+}
+/*@media (min-width: 576px) {*/
+/*    .main-contain {*/
+/*        max-width: 570px;*/
+/*        margin: 10px;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 768px) {*/
+/*    .main-contain {*/
+/*        max-width: 720px;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 992px) {*/
+/*    .main-contain {*/
+/*        max-width: 960px;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1200px) {*/
+/*    .main-contain {*/
+/*        max-width: 1140px;*/
+/*    }*/
+/*}*/
+
+.row{
+    flex-wrap: wrap;
+    margin-left: 13%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.filters {
+    margin-top: 5%;
+    min-width: 300px;
+    border-radius: 5px;
+    background-color: #4b1db2;
+    height: fit-content;
+}
+
+.goods-content {
+    position: relative;
+    margin: auto;
+    min-width: 450px;
+    background-color: white;
+}
+
+.product {
+    position: relative;
+}
+
+
+@media only screen and (max-width: 576px) {
+    .main-contain {
+        display: table-row;
+    }
+    .row {
+        margin-left: 5%;
+    }
+
+}
+
+@media only screen and (min-width: 576px) {
+    header {
+        min-width: 375px;
+    }
+
+}
+.color21 {
+    background-color: green;
+}
+
+.color22 {
+    background-color: yellow;
+}
