@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -8,23 +8,20 @@ html {
     height: 100%;
 }
 
-body
-{
+body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
-header
-{
+header {
     width: 100%;
     background: url('../assets/images/3.png');
     height: 400px;
 }
 
-.header__logo
-{
+.header__logo {
     text-transform: uppercase;
     padding-top: 323px;
     font-size: 40pt;
@@ -36,6 +33,7 @@ header
     flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
     padding: 20px;
 }
+
 .footer {
     flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
     padding: 20px;
@@ -59,48 +57,78 @@ header
     margin-left: 35px;
 }
 
-btn btn-secondary {
-    max-width: 100%;
+
+.main-contain .btn.btn-secondary{
+    width: 100px;
+    margin-left: 22%;
+    margin-top: 30px;
+    background-color: #a34fb2;
 }
-/*@media (min-width: 576px) {*/
-/*    .main-contain {*/
-/*        max-width: 570px;*/
-/*        margin: 10px;*/
-/*    }*/
-/*}*/
 
-/*@media (min-width: 768px) {*/
-/*    .main-contain {*/
-/*        max-width: 720px;*/
-/*    }*/
-/*}*/
-
-/*@media (min-width: 992px) {*/
-/*    .main-contain {*/
-/*        max-width: 960px;*/
-/*    }*/
-/*}*/
-
-/*@media (min-width: 1200px) {*/
-/*    .main-contain {*/
-/*        max-width: 1140px;*/
-/*    }*/
-/*}*/
-
-.row{
+.row {
     flex-wrap: wrap;
-    margin-left: 13%;
-    margin-right: 10%;
+    margin-left: 10px;
+    margin-right: 0;
     margin-top: 5%;
 }
 
 .filters {
-    margin-top: 5%;
+    margin-left: 35px;
+    margin-right: 65px;
+    margin-top: 4.5%;
     min-width: 300px;
-    border-radius: 5px;
+    border-radius: 0;
     background-color: #4b1db2;
     height: fit-content;
 }
+.filters h{
+    position: absolute;
+    margin-top: -20px;
+}
+.filters p {
+    margin-left: 10%;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.dropdown {
+    margin-top: 0;
+    margin-left: 10%;
+    width: 200px;
+}
+
+.dropdown #dropdownMenuButton {
+    width: 200px;
+    background-color: #a34fb2;
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.dropdown #dropdownMenuButton1{
+    width: 200px;
+    background-color: #a34fb2;
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.dropdown #dropdownMenuButton2 {
+    width: 200px;
+    background-color: #a34fb2;
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.dropdown #dropdownMenuButton3 {
+    width: 200px;
+    background-color: #a34fb2;
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
 
 .goods-content {
     position: relative;
@@ -113,27 +141,36 @@ btn btn-secondary {
     position: relative;
 }
 
+@media (max-width: 768px) {
+    .main-contain {
+        display: table-row;
+    }
+    .filters {
+        margin-left: 15%;
+        margin-right: 50px;
+        min-width: 300px;
+        max-width: 400px;
+    }
+    .main-contain .btn.btn-secondary{
+        margin-left: 38%;
+    }
+}
 
 @media only screen and (max-width: 576px) {
     .main-contain {
         display: table-row;
     }
-    .row {
-        margin-left: 5%;
+    .filters{
+        min-width: 300px;
+        max-width: 400px;
     }
-
+    .row {
+        margin-left: 18%;
+    }
 }
 
 @media only screen and (min-width: 576px) {
     header {
         min-width: 375px;
     }
-
-}
-.color21 {
-    background-color: green;
-}
-
-.color22 {
-    background-color: yellow;
 }
